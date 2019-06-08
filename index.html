@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Herb's Page</title>
-	</head>
-	<body>
-		<h1>herbishere's GitHub.io page</h1>
-		<p>Hello! I'm Herbert Diaz and I'm Comp Sci student enrolled at Oregon State University!</p>
-		<div>I'm currently in the process of learning:</div>
-		<ul>
-			<li>HTML/CSS from <a href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a href="https://www.w3schools.com/">w3schools</a></li>
-			<li>C++ from Oregon State University
-		</ul>
-		<h3>As I learn more I expect this page to <strong>GROW</strong>!</h3>
-	</body>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Herbert Diaz - Home</title>
+	<link rel="stylesheet" href="style/style.css" type="text/css">
+	<link rel="stylesheet" href="style/home.css" type="text/css">
+</head>
+
+<body>
+	<div id="content-container">
+		<header class="header">
+			<a href="index.html" id="logo">Herbert Diaz</a>
+			<nav id="navigation-header" class="navigation">
+				<a class="current-page" href="index.html">Home</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact Me</a>
+			</nav>
+		</header>
+		<section class="content">
+			<div id="home-images">
+				<div class="carousel">
+					<div class="carousel-images">
+						<ul class="carousel-images-list">
+							<li id="current-image" class="carousel-images-list-member"><img class="carousel-img"
+									src="images/carousel/placeholder1.png" alt="placeholder"></li>
+							<li class="carousel-images-list-member"><img class="carousel-img"
+									src="images/carousel/placeholder2.png" alt="placeholder"></li>
+							<li class="carousel-images-list-member"><img class="carousel-img"
+									src="images/carousel/placeholder3.png" alt="placeholder"></li>
+						</ul>
+					</div>
+					<div class="carousel-navigation">
+						<div class="button-slide-selection">
+						</div>
+						<div class="button-slide-nextprev">
+							<button id="button-prev" class="carousel_button_slide buttonNextPrev">Prev</button>
+							<button id="button-pause" class="carousel_button_slide buttonNextPrev inactive">||</button>
+							<button id="button-next" class="carousel_button_slide buttonNextPrev">Next</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-me">
+				<div class="about-me-scrollbox">
+					<h1>Who is Herbert Diaz?</h1>
+					<p>Born and raised in the beautiful city of Chicago, Herbert Diaz is a Computer Science Student
+						currently enrolled at Oregon State University.</p>
+					<h1>What Am I Currently Doing?</h1>
+					<h3><a href="https://freegeekchicago.org/">FreeGeekChicago</a></h3>
+					<ul>
+						<li>Volunteering as an Orientation Instructor, introducing newcomers to Linux, e-recycling, and
+							the organization itself.</li>
+					</ul>
+					<h3>Current Projects</h3>
+					<ul>
+						<li>Personal Website - Front End - Last Update: 6/7/2019</li>
+						<ul>
+							<li>Applying the CSS/HTML/JavaScript I've learned in Web Development</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer-links">
+				<a href="#header">Go to Top</a>
+				<nav id="navigation-footer" class="navigation">
+					<a href="index.html">Home</a>
+					<a href="projects.html">Projects</a>
+					<a href="contact.html">Contact Me</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	<script src="scripts/carousel.js"></script>
+</body>
+
 </html>
