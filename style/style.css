@@ -118,3 +118,13 @@ body {
 .footer a {
     color: #b5b5b7;
 }
+
+.icon {
+    max-height: 64px;
+    max-width: 64px;
+    border-radius: 10px;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}

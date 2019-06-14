@@ -5,6 +5,7 @@
     <meta charset='UTF-8'>
     <title>Herbert Diaz - Contact</title>
     <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/contactme.css" type="text/css">
 </head>
 
 <body>
@@ -18,6 +19,55 @@
             </nav>
         </header>
         <section class="content">
+            <div class="form-container">
+                <form class="gform" method="POST"
+                    action="https://script.google.com/macros/s/AKfycbwFTpUudd4tGXxpJft5znzHCJJb5o6MS2W6rT7aqGsLbU7daKU/exec">
+                    <fieldset>
+                        <legend>Insert Information</legend>
+                        <fieldset>
+                            <label>First Name:<br>
+                                <input class="input input-name" type="text" name="firstName" maxlength="100"
+                                    placeholder="Insert Name" required>
+                            </label><br>
+                            <label>Last Name:<br>
+                                <input class="input input-name" type="text" name="lastName" maxlength="100"
+                                    placeholder="Insert Last Name" required>
+                            </label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <label>E-mail:<br>
+                                <input class="input input-email" type="email" name="email" maxLength="100"
+                                    placeholder="username@example.com" required>
+                            </label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <label>Message:<br>
+                                <textarea class="input input-message" name="message"
+                                    placeholder="Insert Message Here..." maxLength="512"></textarea>
+                            </label>
+                        </fieldset>
+                        <input class="input-submit" type="submit" value="Submit">
+                    </fieldset>
+                    <div style="display:none" class="thankyou_message">
+                    <p><b>Message Has Been Sent!</b> Thank you for your message!</p>
+                    </div>
+                </form>
+            </div>
+            <div class="social-media-container">
+                <h3>Social Media</h3>
+                <div class="social-media-links">
+                    <ul>
+                        <li><a href="https://twitter.com/herbishere"><img class="icon" src="images/icons/icon_twitter.png"
+                                    alt="Twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/herbdiaz/"><img class="icon" src="images/icons/icon_linkedin.png"
+                                    alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/herbishere"><img class="icon" src="images/icons/icon_github.png"
+                                    alt="GitHub"></a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <footer class="footer">
             <div class="footer-links">
@@ -30,6 +80,7 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/form-submission-handler.js"></script>
 </body>
 
 </html>
